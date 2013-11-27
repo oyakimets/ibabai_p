@@ -1,8 +1,34 @@
-<% provide(:title, "Product") %>
+<% provide(:title, "Product. How this works.") %>
+<div id="carousel-p" class="carousel slide">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-p" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-p" data-slide-to="1"></li>
+    <li data-target="#carousel-p" data-slide-to="2"></li>
+  </ol>
 
-	<h1>ibabai</h1>
-	<p>
-		How this works.
-	</p>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag "cp/cp1.jpg", id: "pr" %>      
+    </div>
 
+    <div class="item">
+    	<%= image_tag "cp/cp2.jpg", id: "pr" %>
+    </div>
+    <div class="item">
+    	<%= image_tag "cp/cp3.jpg", id: "pr" %>
+    </div>
+    
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-p" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-p" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+	
 	

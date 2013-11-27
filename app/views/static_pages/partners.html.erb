@@ -1,7 +1,35 @@
-<% provide(:title, "Partners") %>
-<h1>ibabai</h1>
-	<p>
-		Our job is to help you to engage your customers.
-	</p>
+<% provide(:title, "Partners. We care about your customers") %>
+
+<div id="carousel-c" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-c" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-c" data-slide-to="1"></li>
+    <li data-target="#carousel-c" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag "cp/cc1.jpg", id: "pr" %>      
+    </div>
+
+    <div class="item">
+    	<%= image_tag "cp/cc2.jpg", id: "pr" %>
+    </div>
+    <div class="item">
+    	<%= image_tag "cp/cc3.jpg", id: "pr" %>
+    </div>
+    
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-c" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-c" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
 
 	

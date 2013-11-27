@@ -1,9 +1,12 @@
 IbabaiP::Application.routes.draw do
-  get "static_pages/partners"
-  get "static_pages/product"
-  get "static_pages/about"
-  get "static_pages/FAQ"
-  get "static_pages/contacts"
+  get "leads/new"
+  get "clients/new"
+  root 'static_pages#product'
+  match '/signup', to: 'leads#new', via: 'get'
+  match '/partners', to: 'static_pages#partners', via: 'get'
+  match '/about', to: 'static_pages#about', via: 'get'
+  match '/faq', to: 'static_pages#FAQ', via: 'get'
+  match '/contacts', to: 'static_pages#contacts', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

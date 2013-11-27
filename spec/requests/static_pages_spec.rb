@@ -1,70 +1,38 @@
 require 'spec_helper'
 
 describe "Static pages" do
+  subject { page }
+
+  describe "Product page" do
+    before { visit root_path }
+    it { should have_title(full_title("Product")) }
+     
+  end
 
   describe "About page" do
+    before { visit about_path }
 
-    it "should have the content 'ibabai'" do
-    	visit '/static_pages/about'
-    	expect(page).to have_content('ibabai')
-    end
-
-    it "should have the title 'About'" do
-      visit '/static_pages/about'
-      expect(page).to have_title("ibabai | About")
-    end
+    it { should have_content('Some stuff about us.') }
+    it { should have_title(full_title('About')) } 
   end
 
   describe "Contacts page" do
-
-  	it "should have the content about contacts" do
-  		visit '/static_pages/contacts'
-  		expect(page).to have_content('Our contacts')
-  	end
-
-    it "should have title 'Contacts'" do
-      visit '/static_pages/contacts'
-      expect(page).to have_title("ibabai | Contacts")
-    end
+    before { visit contacts_path }
+  	it { should have_content('IBABAI, INC.') }
+  	it { should have_title( full_title("Contacts")) }
   end
 
   describe "FAQ page" do
-
-    it "should have the FAQ" do
-      visit '/static_pages/FAQ'
-      expect(page).to have_content('Frequently Asked Questions')
-    end
-
-    it "should have title 'FAQ'" do
-      visit '/static_pages/FAQ'
-      expect(page).to have_title("ibabai | FAQ")
-    end
+    before { visit faq_path }
+    it { should have_content('Ask your question here.') }
+    it { should have_title(full_title("Frequently Asked Questions")) }
   end
 
   describe "Partners page" do
-
-    it "should have the content for partners" do
-      visit '/static_pages/partners'
-      expect(page).to have_content('engage your customers')
-    end
-
-    it "should have title 'Partners'" do
-      visit '/static_pages/partners'
-      expect(page).to have_title("ibabai | Partners")
-    end
-  end
-
-  describe "Product page" do
-
-    it "should have the content about product" do
-      visit '/static_pages/product'
-      expect(page).to have_content('How this works')
-    end
-
-    it "should have title 'Product'" do
-      visit '/static_pages/product'
-      expect(page).to have_title("ibabai | Product")
-    end
+    before { visit partners_path }
+    it { should have_title(full_title("Partners")) }
     
   end
+
+  
 end

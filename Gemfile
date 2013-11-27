@@ -38,6 +38,7 @@ gem 'coffee-rails', '4.0.1'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '3.0.4'
 
@@ -46,6 +47,10 @@ gem 'turbolinks', '1.1.1'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '1.0.2'
+
+gem 'gmaps4rails'
+
+gem 'protected_attributes'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

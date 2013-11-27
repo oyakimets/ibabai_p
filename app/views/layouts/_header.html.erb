@@ -1,0 +1,17 @@
+<header class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+		<div class="navbar-inner">
+			<div class="container">
+				<%= image_tag "logo.png", id: "logo" %>
+				<h3 class="navbar-text" id="page-name"><%= yield(:title) %></h3>
+				<nav>
+					<ul class="nav navbar-nav navbar-right">
+						<li><%= link_to "Product", root_path %></li>
+						<li><%= link_to "Partners", partners_path %></li>
+						<li><%= link_to "About", about_path %></li>
+						<li><%= link_to "FAQ", faq_path %></li>
+						<li><%= link_to "Contacts", contacts_path %></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>

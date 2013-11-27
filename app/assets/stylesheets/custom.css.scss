@@ -1,0 +1,98 @@
+@import "bootstrap";
+
+/* universal */
+
+html {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	height: 100%;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+#main {
+	min-height: 100%;
+	}
+section {
+	overflow: auto;
+}
+
+/* header */
+
+#logo {
+	float: left;
+	margin-right: 30px;
+	margin-top: 5px;
+} 
+
+#page-name {
+	color: #0000ff;
+	text-decoration: none;
+}
+
+/* footer */
+.footer {
+	background-color: #000;
+	height: 60px;
+	margin-top: -60px;
+}
+
+#download {
+	float: left;
+	margin: 10px 100px 10px 100px;
+}
+
+#client-lead {
+	float: right;
+	margin: 10px 100px 10px 100px;
+}
+
+
+#downModal .modal-body {
+	height: 500px;
+	max-height: 600px;
+	
+}
+
+#downModal .modal-dialog {
+	width: 80%
+}
+
+#clientModal .modal-body {
+	height: 500px;
+	max-height: 600px;
+	
+}
+
+#clientModal .modal-dialog {
+	width: 80%
+}
+
+/* contacts */
+
+#map-canvas {
+	height: 400px;
+	width: 500px;
+}
+
+#contacts {
+	height: 100%;
+	padding: 80px 40px 80px 40px;
+}
+
+.col-md-6 {
+	height: 100%;
+}
+
+/* product clients */
+
+#pr {
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+
+
