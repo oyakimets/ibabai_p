@@ -1,0 +1,30 @@
+
+
+	$('#new_lead').on("ajax:success", function(event, data, status, xhr) {
+
+		$('#message').remove();
+
+	
+		$('#lead-form').append("<%= escape_javascript(render('static_pages/flash')) %>");
+
+		<% if flash[:success] %>
+
+			$(this).each(function(){ this.reset() });
+				$(".alert-error").remove();
+					window.setTimeout(function() {$('#clientModal').modal("hide");}, 3000)  
+
+	
+		<% end %>
+	
+
+	});
+
+
+
+
+	 				
+
+
+
+
+

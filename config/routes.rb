@@ -1,12 +1,12 @@
 IbabaiP::Application.routes.draw do
-  get "leads/new"
-  get "clients/new"
+  
   root 'static_pages#product'
-  match '/signup', to: 'leads#new', via: 'get'
   match '/partners', to: 'static_pages#partners', via: 'get'
   match '/about', to: 'static_pages#about', via: 'get'
   match '/faq', to: 'static_pages#FAQ', via: 'get'
   match '/contacts', to: 'static_pages#contacts', via: 'get'
+  match '/leads', to: 'static_pages#new', via: 'get'
+  match '/leads', to: 'static_pages#create', as: "modal", via: 'post'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,4 +1,4 @@
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#clientModal" id="client-lead">Become Partner</button>
+<button type= "button" class= "btn btn-primary btn-lg"     data-toggle= "modal" data-target= "#clientModal" id= "lead">Become Partner</button>
       	
           <div class="modal fade" id="clientModal" tabindex="-1" role="dialog" aria-labelledby="clientModalLabel" aria-hidden="true">
               <div class="modal-dialog">
@@ -7,13 +7,8 @@
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                       <h4 class="modal-title" id="clientModalLabel">Fill in the form and we'll call you back shortly...</h4>
                     </div>
-                    <div class="modal-body">
-                      The form to be placed here
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Send</button>
-                    </div>
+                        <%= render "layouts/mform" %>
+                    
                 </div><!-- /.modal-content -->
               </div><!-- /.modal-dialog -->
           </div><!-- /.modal -->

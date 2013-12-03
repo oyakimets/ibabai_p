@@ -34,5 +34,13 @@ describe "Static pages" do
     
   end
 
+  describe "signup form" js: true do
+    before do
+      click_button "Become Partner"
+      visit signup_path
+    end
+
+    it { should have_content "Fill in the form"}
+  end
   
 end
