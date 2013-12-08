@@ -9,11 +9,13 @@ class StaticPagesController < ApplicationController
   def about
   end
 
-  def FAQ
+  
+  def contacts  	
   end
 
-  def contacts
+  def faq
+    @qas = Qa.where.not(answer: nil) 
+    @qa = Qa.new
   end
-
   
 end

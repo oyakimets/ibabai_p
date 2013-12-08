@@ -1,0 +1,12 @@
+<% if @qa.errors.any? %>
+	<div id="error_expl">
+		<div class="alert alert-danger">
+			You have <%= pluralize(@qa.errors.count, "fuck-up") %>
+		</div>
+		<ul>
+			<% @qa.errors.full_messages.each do |msg| %>
+				<li>* <%= msg %></li>
+			<% end %>
+		</ul>
+	</div>
+<% end %>

@@ -40,7 +40,7 @@ section {
 } 
 
 #page-name {
-	color: #0000ff;
+	color: #99ccff;
 	text-decoration: none;
 }
 
@@ -131,28 +131,75 @@ input {
 	color: #ff0000;
 }
 
-/* FAQ */
+/* FAQ QA */
 
 #feed {
 	overflow-y: scroll;
 	width: 100%;
 	height: 300px;
 	border: 1px solid #bbb;
-	h5 {
-		padding: 10px;
+	h4 {
+		padding: 10px 10px 10px 30px;
 		font: bold;
 	}
 
 }
 
-/* miscellaneous */
+.qa {
+	list-style: none;
+	margin: 10px 0 0 0;
 
-.debug_dump {
-	margin: auto;
-	width: 50%;
-	margin-top: 45px;
-	@include box_sizing;
+	li {
+		padding: 10px 0;
+		border-top: 1px solid #e8e8e8;
+	}
 }
+
+.quest {
+	display: block;
+}
+
+.ans {
+	display: block;
+}
+
+.timestamp {
+	color: #a8a8a8;
+}
+
+.countdown {
+	margin-top: 10px;
+}
+
+#field {
+	
+	margin-top: 10px;
+
+	textarea {
+		height: 100px;
+		}
+}
+
+#sbt {
+	margin-top: 10px;
+	.btn {
+		width: 75px;
+		float: right;
+	}
+	
+}
+
+#hot-line {
+		margin-top: 10px;
+		text-align: right;
+	}
+
+#flash {
+	height: 40px
+}
+
+
+
 
 
 

@@ -1,9 +1,11 @@
 IbabaiP::Application.routes.draw do
   
+  resources :qas, only: [:index, :new, :create]
+  
   root 'static_pages#product'
   match '/partners', to: 'static_pages#partners', via: 'get'
   match '/about', to: 'static_pages#about', via: 'get'
-  match '/faq', to: 'static_pages#FAQ', via: 'get'
+  match '/faq', to: 'static_pages#faq', via: 'get'
   match '/contacts', to: 'static_pages#contacts', via: 'get'
   match '/leads', to: 'static_pages#new', via: 'get'
   match '/leads', to: 'static_pages#create', as: "modal", via: 'post'

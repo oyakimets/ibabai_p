@@ -18,15 +18,11 @@ describe "Static pages" do
 
   describe "Contacts page" do
     before { visit contacts_path }
-  	it { should have_content('IBABAI, INC.') }
-  	it { should have_title( full_title("Contacts")) }
+    it { should have_content('IBABAI, INC.') }
+    it { should have_title( full_title("Contacts")) }
   end
 
-  describe "FAQ page" do
-    before { visit faq_path }
-    it { should have_content('Ask your question here.') }
-    it { should have_title(full_title("Frequently Asked Questions")) }
-  end
+ 
 
   describe "Partners page" do
     before { visit partners_path }
@@ -34,13 +30,34 @@ describe "Static pages" do
     
   end
 
-  describe "signup form" js: true do
-    before do
-      click_button "Become Partner"
-      visit signup_path
-    end
-
-    it { should have_content "Fill in the form"}
-  end
   
+
+  describe "faq page" do
+    
+    before { visit faq_path }
+
+    it { should have_content("The latest Q&A") }
+    it { should have_title(full_title("Frequently Asked Questions")) }
+
+  end
+
+  describe "q&as feed" do
+
+    let!(:q1) { FactoryGirl.create(:qa, question: "Foo", answer: "Bar") }
+    let!(:q2) { FactoryGirl.create(:qa, question: "Boo") }
+
+    before { visit faq_path }
+
+    describe "question/answer" do
+      it { should have_content(q1.question) }
+      it { should have_content(q1.answer) }
+      it { should_not have_content(q2.question)}
+    end
+  end
 end
+
+
+
+
+
+ 

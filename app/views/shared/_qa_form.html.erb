@@ -1,0 +1,15 @@
+  <%= form_for( @qa ) do |f| %>
+  <div class="countdown"></div> 
+  <div class="row">          
+    <div class= "col-md-8" id="field">
+      <%= f.text_area :question, placeholder: "Can't find answer? Ask your question here..." %>
+     </div>
+    <div class="col-md-4" id="sbt">
+      <%= f.label :email, "Want reply with e-mail?" %>
+      <%= f.text_field :email %>    
+    
+      <%= f.submit "Post", class: "btn btn-lg" %>
+          
+    </div>
+</div>
+  <% end %>
