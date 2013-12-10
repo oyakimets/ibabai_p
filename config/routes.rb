@@ -1,5 +1,8 @@
 IbabaiP::Application.routes.draw do
   
+  get "users/new"
+  devise_for :users
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   resources :qas, only: [:index, :new, :create]
   
   root 'static_pages#product'

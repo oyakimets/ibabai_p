@@ -120,6 +120,11 @@ input {
 
 #lead-form {
 	height: auto;
+	.btn {
+		margin-top: 20px;
+		width: 75px;
+		float: right;
+	}
 }
 
 #message {
@@ -183,6 +188,7 @@ input {
 #sbt {
 	margin-top: 10px;
 	.btn {
+		margin-top: 10px;
 		width: 75px;
 		float: right;
 	}
@@ -197,6 +203,7 @@ input {
 #flash {
 	height: 40px
 }
+
 
 
 

@@ -1,0 +1,31 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+@mixin box_sizing {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+} 
+
+#devise {
+	
+	padding-top: 80px;
+	@include box-sizing;
+
+	#checkbox {
+		float: left;
+	}
+
+	
+
+	#links {
+		float: left;
+		display: inline-block;
+		margin-top: 20px;
+		
+	}
+
+	
+}

@@ -7,4 +7,7 @@ class Lead < ActiveRecord::Base
 	validates :company, presence: true
 	validates :tel, presence: true
 	validates :email, presence: true
+
+
+
 end
